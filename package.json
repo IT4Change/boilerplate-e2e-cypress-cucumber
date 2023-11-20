@@ -1,0 +1,50 @@
+{
+  "name": "boilerplate-e2e-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "A boilerplate for end-to-end testing with Cypress and Cucumber in Typescript",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IT4Change/boilerplate-e2e-cypress-cucumber.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IT4Change/boilerplate-e2e-cypress-cucumber/issues"
+  },
+  "homepage": "https://github.com/IT4Change/boilerplate-e2e-cypress-cucumber#readme",
+  "keywords": [
+    "BDD",
+    "cypress",
+    "cucumber",
+    "docker",
+    "eslint",
+    "npm",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "mahula",
+  "license": "Apache-2.0",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^19.1.1",
+    "@cypress/webpack-preprocessor": "^6.0.0",
+    "cypress": "^13.5.1",
+    "multiple-cucumber-html-reporter": "^3.5.0",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/step_definitions/**/*.{js,ts}",
+    "json": {
+      "enabled": true,
+      "output": "cypress/reports/json/cucumber-report.json"
+    },
+    "messages": {
+      "enabled": true,
+      "output": "cypress/reports/messages/cucumber-messages.ndjson"
+    }
+  }
+}
