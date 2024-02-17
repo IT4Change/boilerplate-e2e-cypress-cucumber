@@ -33,7 +33,7 @@
     "cypress": "^13.6.4",
     "multiple-cucumber-html-reporter": "^3.6.2",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
