@@ -130,8 +130,6 @@ module.exports = {
         parser: '@typescript-eslint/parser',
         sourceType: 'module',
       },
-      plugins: ['cypress'],
-      extends: ['plugin:cypress/recommended'],
       plugins: ['@typescript-eslint'],
       extends: [
         'plugin:@typescript-eslint/recommended',
