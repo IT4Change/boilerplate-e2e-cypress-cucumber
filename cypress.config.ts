@@ -1,27 +1,11 @@
-import { defineConfig } from "cypress";
-import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor';
-import webpack from '@cypress/webpack-preprocessor';
-
-// async function setupNodeEvents(
-//   on: Cypress.PluginEvents,
-//   config: Cypress.PluginConfigOptions
-// ): Promise<Cypress.PluginConfigOptions> {
-//   await addCucumberPreprocessorPlugin(on, config);
-
-//   on(
-//     "file:preprocessor",
-//     preprocessor(config, {
-//       typescript: require.resolve("typescript"),
-//     })
-//   );
-
-//   return config;
-// }
+import { defineConfig } from 'cypress'
+import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
+import webpack from '@cypress/webpack-preprocessor'
 
 const setupNodeEvents = async (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
   await addCucumberPreprocessorPlugin(on, config, {
     omitAfterRunHandler: true,
-  });
+  })
   on(
     'file:preprocessor',
     webpack({
@@ -53,22 +37,19 @@ const setupNodeEvents = async (on: Cypress.PluginEvents, config: Cypress.PluginC
         },
       },
     }),
-  );
+  )
 
   return config;
-};
+}
 
 export default defineConfig({
   e2e: {
-    defaultCommandTimeout: 60000,
-    pageLoadTimeout:180000,
     chromeWebSecurity: false,
-    baseUrl: "http://localhost:3000",
-    specPattern: "cypress/e2e/**/*.feature",
-    supportFile: "cypress/support/e2e.ts",
+    baseUrl: 'https://the-internet.herokuapp.com/',
+    specPattern: 'cypress/e2e/features/*.feature',
+    supportFile: false,
     retries:  0,
     video: false,
     setupNodeEvents,
-    experimentalInteractiveRunEvents: true,
   }
-});
+})
