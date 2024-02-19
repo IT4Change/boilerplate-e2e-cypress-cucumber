@@ -1,16 +1,13 @@
-import {
-  Given,
-  When,
-  Then,
-} from '@badeball/cypress-cucumber-preprocessor'
-import {loginPage} from '../../pages/LoginPage'
-import {welcomePage} from '../../pages/WelcomePage'
+import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
+
+import { loginPage } from '../../pages/LoginPage'
+import { welcomePage } from '../../pages/WelcomePage'
 
 Given('The web browser is at the login page', () => {
   cy.visit('/login')
 })
 
-When('I submit the credentials {string} {string}', (username:string, password: string) => {
+When('I submit the credentials {string} {string}', (username: string, password: string) => {
   loginPage.submitLogin(username, password)
 })
 

@@ -1,6 +1,6 @@
-import { defineConfig } from 'cypress'
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
 import webpack from '@cypress/webpack-preprocessor'
+import { defineConfig } from 'cypress'
 
 const setupNodeEvents = async (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
   await addCucumberPreprocessorPlugin(on, config, {
@@ -39,7 +39,7 @@ const setupNodeEvents = async (on: Cypress.PluginEvents, config: Cypress.PluginC
     }),
   )
 
-  return config;
+  return config
 }
 
 export default defineConfig({
@@ -48,8 +48,8 @@ export default defineConfig({
     baseUrl: 'https://the-internet.herokuapp.com/',
     specPattern: 'cypress/e2e/features/*.feature',
     supportFile: false,
-    retries:  0,
+    retries: 0,
     video: false,
     setupNodeEvents,
-  }
+  },
 })

@@ -1,6 +1,6 @@
 class WelcomePage {
   successMessage: string = '.flash.success'
-  WelcomeHeader:string = '.subheader'
+  WelcomeHeader: string = '.subheader'
   logoutBtn: string = 'a[href="/logout"]'
 }
 
