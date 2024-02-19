@@ -35,6 +35,13 @@ module.exports = {
     // Optional eslint-comments rule
     '@eslint-community/eslint-comments/no-unused-disable': 'error',
     '@eslint-community/eslint-comments/disable-enable-pair': ['error', { allowWholeFile: true }],
+    // cypress
+    'cypress/no-assigning-return-values': 'error',
+    'cypress/no-unnecessary-waiting': 'error',
+    'cypress/assertion-before-screenshot': 'warn',
+    'cypress/no-force': 'warn',
+    'cypress/no-async-tests': 'error',
+    'cypress/no-pause': 'error',
     // import
     'import/export': 'error',
     'import/no-deprecated': 'error',
@@ -78,7 +85,7 @@ module.exports = {
     'import/group-exports': 'off',
     'import/newline-after-import': 'error',
     'import/no-anonymous-default-export': 'off', // todo - consider to enable again
-    'import/no-default-export': 'off', // incompatible with vite & vike
+    'import/no-default-export': 'off',
     'import/no-duplicates': 'error',
     'import/no-named-default': 'error',
     'import/no-namespace': 'error',
@@ -123,6 +130,8 @@ module.exports = {
         parser: '@typescript-eslint/parser',
         sourceType: 'module',
       },
+      plugins: ['cypress'],
+      extends: ['plugin:cypress/recommended'],
       plugins: ['@typescript-eslint'],
       extends: [
         'plugin:@typescript-eslint/recommended',
@@ -133,6 +142,14 @@ module.exports = {
         // allow explicitly defined dangling promises
         '@typescript-eslint/no-floating-promises': ['error', { ignoreVoid: true }],
         'no-void': ['error', { allowAsStatement: true }],
+      },
+    },
+    {
+      files: ['!*.json'],
+      plugins: ['prettier'],
+      extends: ['plugin:prettier/recommended'],
+      rules: {
+        'prettier/prettier': 'error',
       },
     },
     {
