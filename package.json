@@ -19,13 +19,16 @@
     "eslint",
     "npm",
     "nodejs",
-    "typescript"
+    "typescript",
+    "vuepress"
   ],
   "author": "mahula",
   "license": "Apache-2.0",
   "scripts": {
     "cypress:open": "cypress open --e2e --browser electron",
     "cypress:run": "cypress run --e2e --browser electron",
+    "docs:dev": "vuepress dev .",
+    "docs:build": "vuepress build .",
     "test:lint:eslint": "eslint --ext .ts,.tsx,.js,.jsx,.cjs,.json,.yml,.yaml --max-warnings 0 ."
   },
   "devDependencies": {
@@ -34,6 +37,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
+    "@vuepress/bundler-vite": "^2.0.0-rc.8",
     "cypress": "^13.6.4",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -49,10 +53,9 @@
     "multiple-cucumber-html-reporter": "^3.6.2",
     "prettier": "^3.2.5",
     "ts-loader": "^9.5.1",
-    "typescript": "^5.3.3"
-  },
-  "engines": {
-    "node": "^20.2.0"
+    "typescript": "^5.3.3",
+    "vuepress": "^2.0.0-rc.0",
+    "vuepress-theme-hope": "^2.0.0-rc.25"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
@@ -65,5 +68,9 @@
       "enabled": true,
       "output": "cypress/reports/messages/cucumber-messages.ndjson"
     }
+  },
+  "dependencies": {
+    "@vuepress/theme-default": "^2.0.0-rc.15",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.25"
   }
 }
