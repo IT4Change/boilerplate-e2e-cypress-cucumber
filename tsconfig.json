@@ -4,7 +4,10 @@
     "target": "ES2020",
     "lib": ["ES2022", "dom"],
     "strict": true,
-    "types": ["cypress", "node"]
+    "types": ["cypress", "node"],
+    "paths": {
+      "#pages/*": ["./cypress/pages/*"]
+    }
   },
   "include": ["**/*.ts"],
   "exclude": ["node_modules"]
