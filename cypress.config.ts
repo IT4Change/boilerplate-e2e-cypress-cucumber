@@ -1,41 +1,18 @@
 import { addCucumberPreprocessorPlugin } from '@badeball/cypress-cucumber-preprocessor'
-import webpack from '@cypress/webpack-preprocessor'
+import { createEsbuildPlugin } from '@badeball/cypress-cucumber-preprocessor/esbuild'
+import createBundler from '@bahmutov/cypress-esbuild-preprocessor'
 import { defineConfig } from 'cypress'
 
-const setupNodeEvents = async (on: Cypress.PluginEvents, config: Cypress.PluginConfigOptions) => {
-  await addCucumberPreprocessorPlugin(on, config, {
-    omitAfterRunHandler: true,
-  })
+async function setupNodeEvents(
+  on: Cypress.PluginEvents,
+  config: Cypress.PluginConfigOptions,
+): Promise<Cypress.PluginConfigOptions> {
+  await addCucumberPreprocessorPlugin(on, config)
+
   on(
     'file:preprocessor',
-    webpack({
-      webpackOptions: {
-        resolve: {
-          extensions: ['.ts', '.js'],
-        },
-        module: {
-          rules: [
-            {
-              test: /\.ts$/,
-              exclude: [/node_modules/],
-              use: [
-                {
-                  loader: 'ts-loader',
-                },
-              ],
-            },
-            {
-              test: /\.feature$/,
-              use: [
-                {
-                  loader: '@badeball/cypress-cucumber-preprocessor/webpack',
-                  options: config,
-                },
-              ],
-            },
-          ],
-        },
-      },
+    createBundler({
+      plugins: [createEsbuildPlugin(config)],
     }),
   )
 

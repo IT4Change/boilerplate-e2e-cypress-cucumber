@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    "module": "ES2020",
-    "target": "ES2020",
+    "esModuleInterop": true,
+    "module": "nodenext",
     "lib": ["ES2022", "dom"],
     "strict": true,
     "types": ["cypress", "node"]
