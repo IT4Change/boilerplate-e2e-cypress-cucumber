@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
-    "@cypress/webpack-preprocessor": "^6.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.0",
     "@eslint-community/eslint-plugin-eslint-comments": "^4.1.0",
     "@typescript-eslint/eslint-plugin": "^7.0.1",
     "@typescript-eslint/parser": "^7.0.1",
@@ -55,6 +55,7 @@
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
     "vuepress": "^2.0.0-rc.0",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.25",
     "vuepress-theme-hope": "^2.0.0-rc.25"
   },
   "cypress-cucumber-preprocessor": {
@@ -68,9 +69,5 @@
       "enabled": true,
       "output": "cypress/reports/messages/cucumber-messages.ndjson"
     }
-  },
-  "dependencies": {
-    "@vuepress/theme-default": "^2.0.0-rc.15",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.25"
   }
 }
