@@ -1,0 +1,7 @@
+# These file filter patterns are used by the action https://github.com/dorny/paths-filter
+e2e-all:
+  - '**/*'
+
+e2e-docs:
+  - '**/*.md'
+  - '.vuepress/*'
