@@ -1,8 +1,10 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
+/* eslint-disable  @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable import/no-relative-parent-imports */
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 
-import { loginPage } from '#pages/LoginPage'
-import { welcomePage } from '#pages/WelcomePage'
+import { loginPage } from '../../pages/LoginPage'
+import { welcomePage } from '../../pages/WelcomePage'
 
 Given('The web browser is at the login page', () => {
   cy.visit('/login')
