@@ -4,7 +4,7 @@ import { hopeTheme } from 'vuepress-theme-hope'
 
 export default defineUserConfig({
   // meta
-  title: 'IT4C - E2E Cypress Cucumber Boilerplate Documentation',
+  title: 'E2E Cypress Cucumber Boilerplate Documentation',
   description: 'IT4C - E2E Cypress Cucumber Boilerplate Documentation',
   dest: 'build/docs',
   base: process.env.VUEPRESS_BASE ? `/${process.env.VUEPRESS_BASE}/` : '/',
@@ -31,7 +31,6 @@ export default defineUserConfig({
     },
     plugins: {
       mdEnhance: {
-        tabs: true,
         imgSize: true
       },
       searchPro: {
