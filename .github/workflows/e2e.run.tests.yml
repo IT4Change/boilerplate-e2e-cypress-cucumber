@@ -24,5 +24,5 @@ jobs:
         if: ${{ failure() && steps.e2e-tests.conclusion == 'failure' }}
         uses: actions/upload-artifact@v4
         with:
-          name: boilerplate-e2e-test-report-pr-${{ github.event.pull_request.number }}
+          name: boilerplate-e2e-test-report-pr${{ needs.e2e-tests.outputs.pull_request.number }}
           path: /home/runner/work/boilerplate-e2e-cypress-cucumber/boilerplate-e2e-cypress-cucumber/cypress/reports/e2e_html_report
