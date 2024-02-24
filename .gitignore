@@ -1,5 +1,6 @@
 build/
 cypress/reports/
+cypress/screenshots/
 node_modules/
 .vuepress/.cache
 .vuepress/.temp
