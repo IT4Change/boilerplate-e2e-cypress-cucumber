@@ -5,3 +5,4 @@ e2e-all:
 e2e-docs:
   - '**/*.md'
   - '.vuepress/*'
+  - 'package.json'

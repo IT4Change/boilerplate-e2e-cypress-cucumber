@@ -8,7 +8,7 @@ export default defineUserConfig({
   description: 'IT4C - E2E Cypress Cucumber Boilerplate Documentation',
   dest: 'build/docs',
   base: process.env.VUEPRESS_BASE ? `/${process.env.VUEPRESS_BASE}/` : '/',
-  pagePatterns: ['**/*.md', '**/LICENSE', '!.vuepress', '!node_modules'],  
+  pagePatterns: ['**/*.md', '**/LICENSE', '!.vuepress', '!node_modules'],
   // bundler
   bundler: viteBundler({}),
   // theme
@@ -25,6 +25,8 @@ export default defineUserConfig({
     repo: 'IT4Change/boilerplate-e2e-cypress-cucumber',
     repoLabel: 'GitHub',
     repoDisplay: true,
+    displayFooter: true,
+    footer: 'CC BY IT4C.dev & Authors - <a href="https://it4c.dev/imprint.html">Imprint</a>',
     navbarLayout: {
       start: ['Brand'],
       end: ['Repo', 'Outlook', 'Search'],
