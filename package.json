@@ -54,9 +54,9 @@
     "prettier": "^3.2.5",
     "ts-loader": "^9.5.1",
     "typescript": "^5.3.3",
-    "vuepress": "^2.0.0-rc.0",
+    "vuepress": "^2.0.0-rc.8",
     "vuepress-plugin-search-pro": "^2.0.0-rc.26",
-    "vuepress-theme-hope": "^2.0.0-rc.25"
+    "vuepress-theme-hope": "^2.0.0-rc.26"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
