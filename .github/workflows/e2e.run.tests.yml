@@ -20,7 +20,8 @@ jobs:
           cd cypress/
           node create-cucumber-html-report.js
 
-      - name
+      - name: Get PR number
+        if: ${{ failure() && steps.e2e-run.conclusion == 'failure' }}
         uses: jwalton/gh-find-current-pr@master
         id: pr-number
 
