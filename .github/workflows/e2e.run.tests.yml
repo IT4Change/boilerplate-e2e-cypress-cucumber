@@ -22,7 +22,7 @@ jobs:
 
       - name: E2E | if tests failed, upload report
         if: ${{ failure() && steps.e2e-run.conclusion == 'failure' }}
-        - run: |
+        run: |
           echo github.event.number = ${{ github.event.number  }}
           echo github.event.pull_request.number = ${{ github.event.pull_request.number }}
           echo github.event.issue.number = ${{ github.event.issue.number }}
