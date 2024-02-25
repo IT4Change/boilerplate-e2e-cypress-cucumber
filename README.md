@@ -24,6 +24,8 @@ Building this project requires `nodejs` (`>= v20`) and `npm`.
 | **Documentation**          |                                               |
 | `npm run docs:dev`         | Run documentation locally in development mode |
 | `npm run docs:build`       | Build static documentation                    |
+| **Maintenance**            |                                               |
+| `npm run update`           | Check for updates                             |
 
 
 ### Update
