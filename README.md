@@ -5,8 +5,7 @@ IT4C Boilerplate for End-to-End Testing with Cypress utilizing
 * [Cucumber](https://cucumber.io/docs/gherkin/reference/) for human-readable test specifications
 * [Multiple Cucumber HTML Reporter](https://github.com/WasiqB/multiple-cucumber-html-reporter/tree/main) to create easy readable, and searchable HTML reports enriched with metadata
 
-
-## Requirements & Commands
+## Requirements and Commands
 
 Building this project requires `nodejs` (`>= v20`) and `npm`.
 
@@ -42,7 +41,7 @@ npm install
 
 ## How to use as part of a project
 
-If you want to use this as part of a larger project, e.g. in conjunction with a frontend also utilizing a boilerplate you cannot use the template mechanic provided by github for this repository.
+If you want to use this template as part of a larger project, e.g. in conjunction with a frontend also utilizing a boilerplate you cannot use the template mechanic provided by github for this repository.
 
 You can use the following commands to include the whole git history of the boilerplate and be able to update according to changes to this repo using another remote.
 
@@ -61,7 +60,7 @@ git subtree pull -P xxx/ xxx_boilerplate-e2e-cypress-cucumber master
 git commit -m "Updated boilerplate-e2e-cypress-cucumber in subtree under xxx/."
 ```
 
-Where `xxx` refers to the folder and product part you want to use the boilerplate in. This assumes that you might need several copies of the frontend boilerplate for you product.
+Where `xxx` refers to the folder and product part you want to use the boilerplate in (e.g. `cypress` or `e2e-tests`).
 
 This mechanic was taken from this [source](https://stackoverflow.com/questions/1683531/how-to-import-existing-git-repository-into-another/8396318#8396318)
 
