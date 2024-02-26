@@ -1,6 +1,6 @@
 import report from 'multiple-cucumber-html-reporter'
 
-const reportTitle = 'DreamMall End-to-End Test Report'
+const reportTitle = 'End-to-End Test Report'
 
 report.generate({
   jsonDir: './reports/json/',
