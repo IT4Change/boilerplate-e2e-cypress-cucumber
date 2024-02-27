@@ -10,7 +10,7 @@ IT4C Boilerplate for End-to-End Testing with Cypress utilizing
 Building this project requires `nodejs` (`>= v20`) and `npm`.
 
 
-## Commands
+### Commands
 
 | Command                    | Description                                   |
 |----------------------------|-----------------------------------------------|
@@ -39,6 +39,15 @@ Afterwards run `npm install`.
 npm run update -- -u
 npm install
 ```
+
+
+## Test Examples
+
+To showcase Cucumber feature tests, a simple login example on [the-internet](https://the-internet.herokuapp.com/) is written in the feature file [Login.feature](./cypress/e2e/features/Login.feature).  
+The `baseUrl` is set in [cypress.config.ts](https://github.com/IT4Change/boilerplate-e2e-cypress-cucumber/blob/8306614812c1011642c75ae34057ca66784cae4f/cypress.config.ts#L25) and the test steps are defined in [this step definition file](./cypress/e2e/ssteps/login.ts).
+
+ 
+Testing against the demo website [the-internet](https://the-internet.herokuapp.com/) was chosen from the test practice recommendations of https://www.davidmello.com/best-websites-for-practicing-test-automation/.
 
 
 ## How to use as part of a project
