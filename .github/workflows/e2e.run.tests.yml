@@ -18,7 +18,7 @@ jobs:
         if: ${{ failure() && steps.e2e-run.conclusion == 'failure' }}
         run: |
           cd cypress/
-          node create-cucumber-html-report.js
+          npx tsx create-cucumber-html-report.ts
 
       - name: Get PR number
         if: ${{ failure() && steps.e2e-run.conclusion == 'failure' }}
