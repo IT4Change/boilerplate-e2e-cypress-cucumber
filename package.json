@@ -58,7 +58,7 @@
     "typescript": "^5.4.3",
     "vuepress": "^2.0.0-rc.8",
     "vuepress-plugin-search-pro": "^2.0.0-rc.29",
-    "vuepress-theme-hope": "^2.0.0-rc.31"
+    "vuepress-theme-hope": "^2.0.0-rc.32"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
