@@ -28,20 +28,22 @@ jobs:
     needs: files-changed
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
       - name: Set Node version
         uses: actions/setup-node@v4
         with:
           node-version: '21'
 
-      - name: Checkout
-        uses: actions/checkout@master
+      # run build script
+      - name: Build Docs
+        run: npm docs:build
 
-      - name: vuepress-deploy
-        uses: jenkey2011/vuepress-deploy@master
+      - name: Deploy to GitHub Pages
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: gh-pages
+          build_dir: build/docs/
         env:
-          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          #TARGET_REPO: username/repo
-          #TARGET_BRANCH: master
-          BUILD_SCRIPT: npm install && npm run docs:build
-          BUILD_DIR: build/docs/
-          VUEPRESS_BASE: boilerplate-e2e-cypress-cucumber
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
