@@ -44,6 +44,6 @@ jobs:
         uses: crazy-max/ghaction-github-pages@v4
         with:
           target_branch: gh-pages
-          build_dir: .vuepress/dist
+          build_dir: .vuepress/.temp
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
