@@ -35,11 +35,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 21
-          cache: npm
 
       # run build script
       - name: Build Docs
-        run: npm run docs:build
+        run: npm install && npm run docs:build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
