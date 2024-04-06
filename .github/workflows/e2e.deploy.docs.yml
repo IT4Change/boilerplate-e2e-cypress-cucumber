@@ -3,7 +3,7 @@ name: e2e:deploy:docs to github
 on:
   push:
     branches:
-      - change-docs-deploy-action
+      - master
 
 jobs:
   files-changed:
@@ -30,22 +30,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
-      # - name: Set Node version
-      #   uses: actions/setup-node@v4
-      #   with:
-      #     node-version: 21
-
-      - name: Build Docs
-        run: npm install && npm run docs:build
-
-      # - name: Deploy to GitHub Pages
-      #   uses: crazy-max/ghaction-github-pages@v4
-      #   with:
-      #     target_branch: gh-pages
-      #     build_dir: build/docs/
-      #   env:
-      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: vuepress-deploy
         uses: jenkey2011/vuepress-deploy@master
