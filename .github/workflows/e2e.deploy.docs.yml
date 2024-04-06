@@ -31,20 +31,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@master
 
-      - name: Set Node version
-        uses: actions/setup-node@v4
-        with:
-          node-version: 21
-
-      # run build script
-      - name: Build Docs
-        run: npm install && npm run docs:build
-
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
-        with:
-          target_branch: gh-pages
-          build_dir: build/docs
-          verbose: true
+      - name: vuepress-deploy
+        uses: jenkey2011/vuepress-deploy@master
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BUILD_SCRIPT: npm install && npm run docs:build
+          BUILD_DIR: build/docs/
+          VUEPRESS_BASE: boilerplate-e2e-cypress-cucumber
