@@ -4,5 +4,6 @@ e2e-all:
 
 e2e-docs:
   - '**/*.md'
+  - '.github/workflows/e2e.deploy.docs.yml'
   - '.vuepress/*'
   - 'package.json'
