@@ -38,7 +38,7 @@ jobs:
 
       # run build script
       - name: Build Docs
-        run: npm docs:build
+        run: npm run docs:build
 
       - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v4
