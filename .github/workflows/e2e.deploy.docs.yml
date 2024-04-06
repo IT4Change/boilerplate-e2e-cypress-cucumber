@@ -34,7 +34,8 @@ jobs:
       - name: Set Node version
         uses: actions/setup-node@v4
         with:
-          node-version: '21'
+          node-version: 21
+          cache: npm
 
       # run build script
       - name: Build Docs
