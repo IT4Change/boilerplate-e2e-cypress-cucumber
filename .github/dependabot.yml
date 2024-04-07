@@ -2,7 +2,7 @@ version: 2
 updates:
 
 - package-ecosystem: "github-actions"
-  open-pull-requests-limit: 999
+  open-pull-requests-limit: 99
   directory: "/"
   rebase-strategy: "disabled"
   schedule:
@@ -12,7 +12,7 @@ updates:
     time: "03:00"
 
 - package-ecosystem: npm
-  open-pull-requests-limit: 999
+  open-pull-requests-limit: 99
   directory: "/"
   rebase-strategy: "disabled"
   schedule:
