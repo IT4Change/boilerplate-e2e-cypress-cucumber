@@ -1,6 +1,6 @@
 # boilerplate-e2e-cypress-cucumber
 
-IT4C Boilerplate for End-to-End Testing with Cypress utilizing
+IT4C Boilerplate for End-to-End Testing with Cypress utilizing:
 * [cypress-io/github-action](https://github.com/marketplace/actions/cypress-io) caching the Cypress installation and dependencies for fast Cypress CI initialisation
 * [Cucumber](https://cucumber.io/docs/gherkin/reference/) for human-readable test specifications
 * [Multiple Cucumber HTML Reporter](https://github.com/WasiqB/multiple-cucumber-html-reporter/tree/main) to create easy readable, and searchable HTML reports enriched with metadata
