@@ -20,3 +20,23 @@ updates:
     day: "saturday"
     timezone: "Europe/Berlin"
     time: "03:00"
+  groups:
+    cypress:
+      applies-to: version-updates
+      patterns:
+        - "*cyperss*"
+        - "*cucumber*"
+    linting:
+      applies-to: version-updates
+      patterns:
+        - "*eslint*"
+        - "prettier"
+    typescript:
+      applies-to: version-updates
+      patterns:
+        - "typescript"
+        - "ts*"
+    vuepress:
+      applies-to: version-updates
+      patterns:
+        - "*vuepress*"
