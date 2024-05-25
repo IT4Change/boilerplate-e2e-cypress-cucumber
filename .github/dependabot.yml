@@ -29,8 +29,12 @@ updates:
     linting:
       applies-to: version-updates
       patterns:
-        - "*eslint*"
+        - "@eslint-community/eslint-plugin-eslint-comments"
+        - "@typescript-eslint/*"
+        - "eslint-*"
         - "prettier"
+      exclude-patterns:
+        - "eslint"
     typescript:
       applies-to: version-updates
       patterns:
