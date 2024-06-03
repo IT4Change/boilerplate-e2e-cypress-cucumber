@@ -24,7 +24,7 @@ updates:
     cypress:
       applies-to: version-updates
       patterns:
-        - "*cyperss*"
+        - "*cypress*"
         - "*cucumber*"
     linting:
       applies-to: version-updates
