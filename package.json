@@ -54,8 +54,8 @@
     "multiple-cucumber-html-reporter": "^3.7.0",
     "prettier": "^3.3.2",
     "ts-loader": "^9.5.1",
-    "tsx": "^4.19.0",
-    "typescript": "^5.5.4",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.2",
     "vuepress": "^2.0.0-rc.14",
     "vuepress-plugin-search-pro": "^2.0.0-rc.50",
     "vuepress-theme-hope": "^2.0.0-rc.50"
