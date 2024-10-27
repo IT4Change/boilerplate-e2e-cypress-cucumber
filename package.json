@@ -38,7 +38,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "^4.4.1",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
     "@typescript-eslint/parser": "^8.11.0",
-    "@vuepress/bundler-vite": "^2.0.0-rc.14",
+    "@vuepress/bundler-vite": "^2.0.0-rc.18",
     "cypress": "^13.15.1",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
@@ -56,9 +56,9 @@
     "ts-loader": "^9.5.1",
     "tsx": "^4.19.2",
     "typescript": "^5.6.3",
-    "vuepress": "^2.0.0-rc.14",
-    "vuepress-plugin-search-pro": "^2.0.0-rc.52",
-    "vuepress-theme-hope": "^2.0.0-rc.52"
+    "vuepress": "^2.0.0-rc.18",
+    "vuepress-plugin-search-pro": "^2.0.0-rc.59",
+    "vuepress-theme-hope": "^2.0.0-rc.59"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true,
