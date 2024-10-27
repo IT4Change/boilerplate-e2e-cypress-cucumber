@@ -8,6 +8,10 @@
       "automerge": true,
       "automergeType": "pr",
       "platformAutomerge": true
+    },
+    {
+      "matchPackageNames": ["/vuepress/"],
+      "groupName": "vuepress",
     }
   ],
   "npm": {
