@@ -51,7 +51,7 @@
     "eslint-plugin-promise": "^6.6.0",
     "eslint-plugin-security": "^3.0.1",
     "eslint-plugin-yml": "^1.17.0",
-    "multiple-cucumber-html-reporter": "^3.9.1",
+    "multiple-cucumber-html-reporter": "^3.9.2",
     "prettier": "^3.5.1",
     "ts-loader": "^9.5.2",
     "tsx": "^4.19.3",
