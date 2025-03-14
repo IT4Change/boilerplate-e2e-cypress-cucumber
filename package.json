@@ -43,7 +43,7 @@
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.1",
     "eslint-config-standard": "^17.1.0",
-    "eslint-import-resolver-typescript": "^3.8.6",
+    "eslint-import-resolver-typescript": "^3.8.7",
     "eslint-plugin-cypress": "^3.6.0",
     "eslint-plugin-import": "^2.31.0",
     "eslint-plugin-json": "^3.1.0",
