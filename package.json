@@ -39,7 +39,7 @@
     "@typescript-eslint/eslint-plugin": "^8.29.1",
     "@typescript-eslint/parser": "^8.29.1",
     "@vuepress/bundler-vite": "^2.0.0-rc.18",
-    "cypress": "^14.2.1",
+    "cypress": "^14.3.0",
     "eslint": "^8.57.1",
     "eslint-config-prettier": "^10.1.1",
     "eslint-config-standard": "^17.1.0",
