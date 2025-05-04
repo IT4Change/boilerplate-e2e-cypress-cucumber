@@ -225,14 +225,13 @@ module.exports = defineConfig([
   globalIgnores([
     '.gitignore',
     '.github/',
-    '.prettierrc.json',
     '.vuepress/public/',
     '**/*md',
+    '**/*,json',
     '**/build/',
     'cypress/reports/',
     'cypress/screenshots/',
     'LICENSE',
     'node_modules/',
-    'renovate.json',
   ]),
 ])
