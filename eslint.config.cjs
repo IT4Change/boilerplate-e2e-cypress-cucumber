@@ -1,3 +1,6 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-require-imports */
+/* eslint-disable import/no-commonjs */
 const { fixupConfigRules, fixupPluginRules } = require('@eslint/compat')
 const { FlatCompat } = require('@eslint/eslintrc')
 const js = require('@eslint/js')
@@ -20,7 +23,7 @@ const compat = new FlatCompat({
 
 module.exports = defineConfig([
   {
-    ignores: ['build/*', 'cypress/reports/*', 'cypress/screenshots/*', 'node_modules/*'],
+    ignores: ['**/*md', 'build/*', 'cypress/reports/*', 'cypress/screenshots/*', 'node_modules/*'],
 
     languageOptions: {
       globals: {
@@ -258,5 +261,11 @@ module.exports = defineConfig([
 
     extends: compat.extends('plugin:yml/prettier'),
   },
-  globalIgnores(['**/build/', 'cypress/reports/', 'cypress/screenshots/', '**/node_modules/']),
+  globalIgnores([
+    '**/*md',
+    '**/build/',
+    'cypress/reports/',
+    'cypress/screenshots/',
+    'node_modules/',
+  ]),
 ])
