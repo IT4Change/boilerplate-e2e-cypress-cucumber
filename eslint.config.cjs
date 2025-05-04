@@ -270,6 +270,7 @@ module.exports = defineConfig([
     '**/build/',
     'cypress/reports/',
     'cypress/screenshots/',
+    'LICENSE',
     'node_modules/',
     'renovate.json',
   ]),
