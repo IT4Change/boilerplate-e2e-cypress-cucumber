@@ -213,32 +213,6 @@ module.exports = defineConfig([
     },
   },
   {
-    files: ['!**/*.json'],
-
-    plugins: {
-      prettier,
-    },
-
-    extends: compat.extends('plugin:prettier/recommended'),
-
-    rules: {
-      'prettier/prettier': 'error',
-    },
-  },
-  {
-    files: ['!**/*.json'],
-
-    plugins: {
-      prettier,
-    },
-
-    extends: compat.extends('plugin:prettier/recommended'),
-
-    rules: {
-      'prettier/prettier': 'error',
-    },
-  },
-  {
     files: ['**/*.yaml', '**/*.yml'],
 
     languageOptions: {
