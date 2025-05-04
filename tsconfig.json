@@ -6,6 +6,6 @@
     "strict": true,
     "types": ["cypress", "node"]
   },
-  "include": ["**/*.ts"],
+  "include": ["**/*.ts", ".vuepress/config.ts"],
   "exclude": ["node_modules"]
 }
