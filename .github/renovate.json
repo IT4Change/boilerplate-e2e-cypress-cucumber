@@ -11,7 +11,7 @@
     },
     {
       "matchPackageNames": ["/vuepress/"],
-      "groupName": "vuepress",
+      "groupName": "vuepress"
     }
   ],
   "npm": {

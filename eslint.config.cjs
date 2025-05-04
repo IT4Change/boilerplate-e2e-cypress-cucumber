@@ -263,6 +263,7 @@ module.exports = defineConfig([
   },
   globalIgnores([
     '.gitignore',
+    '.github/',
     '.prettierrc.json',
     '.vuepress/public/',
     '**/*md',
