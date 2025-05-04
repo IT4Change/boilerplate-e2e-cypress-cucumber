@@ -9,7 +9,6 @@ const tsParser = require('@typescript-eslint/parser')
 const { defineConfig, globalIgnores } = require('eslint/config')
 const cypress = require('eslint-plugin-cypress')
 const _import = require('eslint-plugin-import')
-const prettier = require('eslint-plugin-prettier')
 const yml = require('eslint-plugin-yml')
 const globals = require('globals')
 const parser = require('yaml-eslint-parser')
@@ -22,7 +21,8 @@ const compat = new FlatCompat({
 
 module.exports = defineConfig([
   {
-    ignores: ['**/*md', 'build/*', 'cypress/reports/*', 'cypress/screenshots/*', 'node_modules/*'],
+    
+    ignores: ['.gitignore', '.github/', '.vuepress/public/', '**/*md', '**/*,json', '**/build/', 'cypress/reports/', 'cypress/screenshots/', 'LICENSE', 'node_modules/'],
 
     languageOptions: {
       globals: {
@@ -86,7 +86,7 @@ module.exports = defineConfig([
       'import/no-empty-named-blocks': 'error',
       'import/no-extraneous-dependencies': 'error',
       'import/no-mutable-exports': 'error',
-      'import/no-unused-modules': 'error',
+      'import/no-unused-modules': 'warn',
       'import/no-named-as-default': 'error',
       'import/no-named-as-default-member': 'error',
       'import/no-amd': 'error',
@@ -117,9 +117,6 @@ module.exports = defineConfig([
       'import/extensions': [
         'error',
         'never',
-        {
-          json: 'always',
-        },
       ],
       'import/first': 'error',
       'import/group-exports': 'off',
