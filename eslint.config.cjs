@@ -9,7 +9,6 @@ const tsParser = require('@typescript-eslint/parser')
 const { defineConfig, globalIgnores } = require('eslint/config')
 const cypress = require('eslint-plugin-cypress')
 const _import = require('eslint-plugin-import')
-const json = require('eslint-plugin-json')
 const prettier = require('eslint-plugin-prettier')
 const yml = require('eslint-plugin-yml')
 const globals = require('globals')
@@ -238,15 +237,6 @@ module.exports = defineConfig([
     rules: {
       'prettier/prettier': 'error',
     },
-  },
-  {
-    files: ['**/*.json'],
-
-    plugins: {
-      json,
-    },
-
-    // extends: compat.extends("plugin:json/recommended-with-comments"),
   },
   {
     files: ['**/*.yaml', '**/*.yml'],
