@@ -262,10 +262,14 @@ module.exports = defineConfig([
     extends: compat.extends('plugin:yml/prettier'),
   },
   globalIgnores([
+    '.gitignore',
+    '.prettierrc.json',
+    '.vuepress/public/',
     '**/*md',
     '**/build/',
     'cypress/reports/',
     'cypress/screenshots/',
     'node_modules/',
+    'renovate.json',
   ]),
 ])
