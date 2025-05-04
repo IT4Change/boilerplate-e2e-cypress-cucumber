@@ -27,14 +27,14 @@ export default defineUserConfig({
     repoDisplay: true,
     displayFooter: true,
     footer: 'CC BY IT4C.dev & Authors - <a href="https://it4c.dev/imprint.html">Imprint</a>',
+    markdown: {
+      imgSize: true
+    },
     navbarLayout: {
       start: ['Brand'],
       end: ['Repo', 'Outlook', 'Search'],
     },
     plugins: {
-      mdEnhance: {
-        imgSize: true
-      },
       slimsearch: {
         indexContent: true
       }
