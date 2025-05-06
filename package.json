@@ -43,7 +43,7 @@
     "@typescript-eslint/parser": "^8.31.1",
     "@vuepress/bundler-vite": "^2.0.0-rc.18",
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.99",
-    "cypress": "^14.3.2",
+    "cypress": "^14.3.3",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.2",
     "eslint-import-resolver-typescript": "^3.10.1",
