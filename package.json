@@ -45,7 +45,7 @@
     "@vuepress/plugin-slimsearch": "^2.0.0-rc.99",
     "cypress": "^14.3.2",
     "eslint": "^9.26.0",
-    "eslint-config-prettier": "^10.1.2",
+    "eslint-config-prettier": "^10.1.8",
     "eslint-import-resolver-typescript": "^3.10.1",
     "eslint-plugin-cypress": "^4.3.0",
     "eslint-plugin-import": "^2.31.0",
