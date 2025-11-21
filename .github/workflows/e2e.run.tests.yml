@@ -7,13 +7,13 @@ jobs:
     name: Run all E2E tests
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+
       - name: Set Node version
         uses: actions/setup-node@633bb92bc0aabcae06e8ea93b85aecddd374c402 # v6.0.0
         with:
-          node-version: '>=22.15.0'
-
-      - name: Checkout
-        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
+          node-version-file: '.tool-versions'
 
       - name: E2E - Run all tests
         id: e2e-run
