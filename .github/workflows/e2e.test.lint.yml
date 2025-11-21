@@ -9,7 +9,7 @@ jobs:
     outputs:
       changes: ${{ steps.changes.outputs.e2e-all }}
     steps:
-      - uses: actions/checkout@master
+      - uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: Check for frontend file changes
         uses: dorny/paths-filter@v3.0.2
@@ -26,12 +26,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set Node version
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@633bb92bc0aabcae06e8ea93b85aecddd374c402 # v6.0.0
         with:
           node-version: '>=22.15.0'
 
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: E2E files | Lint
         run: npm install && npm run test:lint:eslint
