@@ -58,7 +58,7 @@
     "prettier": "^3.5.3",
     "sass-embedded": "^1.87.0",
     "ts-loader": "^9.5.2",
-    "tsx": "^4.19.4",
+    "tsx": "^4.20.6",
     "typescript": "^5.8.3",
     "vuepress": "^2.0.0-rc.22",
     "vuepress-theme-hope": "^2.0.0-rc.63",
