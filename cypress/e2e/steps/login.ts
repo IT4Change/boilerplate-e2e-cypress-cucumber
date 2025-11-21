@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
-/* eslint-disable  @typescript-eslint/no-unsafe-member-access */
 /* eslint-disable import/no-relative-parent-imports */
 import { Given, When, Then } from '@badeball/cypress-cucumber-preprocessor'
 

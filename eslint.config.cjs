@@ -22,7 +22,7 @@ const compat = new FlatCompat({
 module.exports = defineConfig([
   {
     
-    ignores: ['.gitignore', '.github/', '.vuepress/public/', '**/*md', '**/*.json', '**/build/', 'cypress/reports/', 'cypress/screenshots/', 'LICENSE', 'node_modules/'],
+    ignores: ['.gitignore', '.github/', '.vuepress/public/', '.vuepress/.temp/', '**/*md', '**/*.json', '**/build/', 'cypress/reports/', 'cypress/screenshots/', 'LICENSE', 'node_modules/'],
 
     languageOptions: {
       globals: {
@@ -226,6 +226,7 @@ module.exports = defineConfig([
     '.gitignore',
     '.github/',
     '.vuepress/public/',
+    '.vuepress/.temp/',
     '**/*md',
     '**/*.json',
     '**/build/',
