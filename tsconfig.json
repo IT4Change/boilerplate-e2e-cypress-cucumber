@@ -4,8 +4,9 @@
     "module": "nodenext",
     "lib": ["ES2022", "dom"],
     "strict": true,
+    "skipLibCheck": true,
     "types": ["cypress", "node"]
   },
   "include": ["**/*.ts", ".vuepress/config.ts"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "cypress"]
 }
