@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@1af3b93b6815bc44a9784bd300feb67ff0d1eeb3 # v6.0.0
 
       - name: Set Node version
-        uses: actions/setup-node@633bb92bc0aabcae06e8ea93b85aecddd374c402 # v6.0.0
+        uses: actions/setup-node@b9b25d45f70a5d94d88496aa4896bf9ed8f49b67 # v6.0.0
         with:
           node-version-file: '.tool-versions'
 
