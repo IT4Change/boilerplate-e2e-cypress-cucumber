@@ -61,7 +61,7 @@
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vuepress": "^2.0.0-rc.26",
-    "vuepress-theme-hope": "^2.0.0-rc.101",
+    "vuepress-theme-hope": "^2.0.0-rc.102",
     "yaml-eslint-parser": "^2.0.0"
   },
   "cypress-cucumber-preprocessor": {
