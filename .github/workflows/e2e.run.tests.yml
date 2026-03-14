@@ -27,7 +27,7 @@ jobs:
 
       - name: Get PR number
         if: ${{ failure() && steps.e2e-run.conclusion == 'failure' }}
-        uses: jwalton/gh-find-current-pr@master
+        uses: jwalton/gh-find-current-pr@89ee5799558265a1e0e31fab792ebb4ee91c016b
         id: pr-number
 
       - name: E2E | if tests failed, upload report
