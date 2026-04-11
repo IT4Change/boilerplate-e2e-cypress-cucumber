@@ -55,7 +55,7 @@
     "eslint-plugin-yml": "^1.19.1",
     "globals": "^17.4.0",
     "multiple-cucumber-html-reporter": "^3.10.0",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.2",
     "sass-embedded": "^1.97.3",
     "ts-loader": "^9.5.4",
     "tsx": "^4.21.0",
